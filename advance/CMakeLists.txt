@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.8)
+project(peixun2)
+find_package(OpenCV 4 REQUIRED)
+file(GLOB_RECURSE src "src/*.cpp")
+add_executable(peixun2)
+target_sources(peixun2 PRIVATE ${src})
+target_include_directories(peixun2 PRIVATE ./include)
+target_link_libraries(peixun2 PRIVATE ${OpenCV_LIBS})
