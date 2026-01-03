@@ -1,0 +1,5 @@
+simple_publisher:
+  ros__parameters:
+    duringtime: 1000
+    mynum: 114.514
+    mystr: "mamba out"
